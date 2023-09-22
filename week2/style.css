@@ -155,33 +155,41 @@ main h3 {
 
 /* Call to Action Styles */
 .cta-container {
+    border: 4px antiquewhite;
+    border-style: solid;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(45deg, #f74747, #3d3de3);
+    background: linear-gradient(45deg, rgb(243, 243, 243), #40c9f7);
     margin-top: 30px;
-    font-size: 2em;
+    font-size: 1.4em;
     color: #fff;
+}
 
+.cta-container h2 {
+    text-transform: uppercase;
+    font-size: 34px;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffee00;
-    color: #ffffff;
+    font-size: large;
+    padding: 10px 30px;
+    background-color: rgb(238, 223, 204);
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s;
+    border-radius: 35px;
+    font-weight: lighter;
+    margin-top: 35px;
+    transition: background-color 0.1s;
 }
 
 .cta-button:hover {
-    background-color: #ffc400;
+    background-color:rgb(211, 199, 182);
 }
 
 /* Footer Styles */
 footer {
+    margin-top: 100px;
     background-color: #ffffff;
     color: #000000;
     text-align: center;

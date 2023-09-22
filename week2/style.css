@@ -16,11 +16,17 @@ header {
     background-color: #fff;
     color: black;
     text-align: center;
-    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    padding: 0 200px;
 }
 
 .headeraH1 {
-    margin: 0;
+    font-size: 27px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding: 10px;
 }
 
 .banner {
@@ -37,33 +43,42 @@ header {
 
 /* Navigation Styles */
 nav ul {
-    background-color: #333;
-    color: #fff;
     text-align: center;
     list-style-type: none;
-    margin: 0;
-    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #ffffff;
+    opacity: .8;
 }
 
 nav li {
+    width: 130px;
     display: inline-block;
 }
 
 nav a {
+    font-weight: light;
     display: block;
-    color: #fff;
+    color: #8b8b8b;
     text-align: center;
-    padding: 14px 16px;
+    padding: 19px 16px;
     text-decoration: none;
-    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+    transition: color 0.3s;  /* Smooth transition for hover effect */
 }
 
 nav a:hover {
-    background-color: #505050;  /* Darker shade for hover */
+    color: #000000;  /* Darker shade for hover */
+}
+
+.header-nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Banner Styles */
 .banner-container {
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;

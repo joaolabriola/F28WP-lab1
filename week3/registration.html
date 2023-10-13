@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Voyages | Travel Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body > 
+  <!-- Main Container -->
+  <div>
+    <div class="header-nav">
+      <!-- Header Section -->
+      <header>
+        <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+      </header>
+
+      <!-- Navigation Section -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+          <li><a href="registration.html" id="login">Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    <main class="registration">
+        <div class="form">
+          <form id="form" onsubmit="return validateForm()">
+            <h1>Registration</h1>
+        
+            <div class="input-control">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username">
+              <div class="error" id="unErr"></div>
+            </div>
+            <div class="input-control">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+              <div class="error" id="emailErr"></div>
+            </div>
+            <div class="input-control">
+              <label for="pwd">Password</label>
+              <input type="password" id="pswd" name="pwd" >
+              <div class="error" id="pwdErr"></div>
+            </div>
+            <div class="input-control">
+              <label for="confirm">Confirm Password</label>
+              <input type="password" id="confirm" name="confirm" >
+              <div class="error" id="conErr"></div>
+            </div>
+            <div class="input-control">
+              <input type="submit" value="submit">
+            </div>
+        
+          </form>
+        </div>
+    
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <ul>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+      </ul>
+      <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,5 @@
 const express = require('express');
+const session = require('express-session');
 const mysql = require('mysql');
 const dotenv = require('dotenv');
 const path = require('path');
@@ -28,6 +29,17 @@ app.use(express.static(publicDirectory));
 app.set('view engine', 'hbs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
+
+
+// Set up session 
+app.use(
+    session({
+        secret: 'joao',
+        resave: true,
+        saveUninitialized: true,
+    })
+);
+
 
 // Define routes
 app.use('/', require('./routes/pages'));
